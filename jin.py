@@ -17,7 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_member_join(member):
-    print(f'welcome {member}')
+    print(f'Welcome {member}!')
     channel = client.get_channel(854247382086189066)
     await channel.send("<:Wjin:865274048988184588><:Ejin:865274113174405131><:Ljin:865274170157432843><:Cjin:865274259353370634><:Ojin:865274346129850408><:Mjin:865274436168450058><:Ejin:865274113174405131>")
     role = get(member.guild.roles, id=833781809128669265)
@@ -25,7 +25,7 @@ async def on_member_join(member):
 
 @client.event
 async def on_member_remove(member):
-    print(f'goodbye {member}')
+    print(f'Goodbye {member}!')
 
 @client.command()
 async def jin(ctx):
